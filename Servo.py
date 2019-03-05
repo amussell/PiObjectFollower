@@ -1,9 +1,9 @@
 from Direction import Direction
-#import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 
-class Servo(object):
-"""This class controls a servo with GPIO pwm control.
-"""
+class Servo:
+    """This class controls a servo with GPIO pwm control.
+    """
 
 
     def __init__(self, pin : int):

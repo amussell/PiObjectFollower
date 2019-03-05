@@ -4,8 +4,8 @@ from typing import Tuple
 from math import floor
 
 class Direction(enum.Enum):
-"""Enum for different Directions.
-"""
+    """Enum for different Directions.
+    """
 
     Left = 1
     Right = 2

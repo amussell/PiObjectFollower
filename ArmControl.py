@@ -6,12 +6,12 @@ import math
 import numpy as np
 from typing import Tuple, Boolean
 
-class ArmControl(object):
-"""Object to control a 2 axis servo controlled arm.
+class ArmControl:
+    """Object to control a 2 axis servo controlled arm.
 
-Given a queue with (obj, frame) objects this class can track an the object from the queue.
-The data in (obj, frame) should be formated ((x,y,width,height), img: np.array)
-"""
+    Given a queue with (obj, frame) objects this class can track an the object from the queue.
+    The data in (obj, frame) should be formated ((x,y,width,height), img: np.array)
+    """
 
     def __init__(self, horizontalControlPin: int, verticalControlPin: int) -> ArmControl:
         self.horizontalControlPin = horizontalControlPin
